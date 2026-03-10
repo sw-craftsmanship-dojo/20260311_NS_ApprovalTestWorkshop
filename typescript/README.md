@@ -20,7 +20,7 @@ npm test
 ## Run Tests with Code Coverage
 
 ```bash
-npx jest --config jest.config.js --coverage
+npx jest --coverage
 ```
 
 Coverage report is printed to the console. HTML report at:
