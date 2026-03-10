@@ -3,7 +3,7 @@ export function mergeNameAndAge(name: string, age: number): string {
     if (age <= 18) {
         title = "Junior";
     }
-    if (age > 19 && age <= 60) {
+    if (age > 18 && age <= 60) {
         title = "Mister";
     }
     if (age > 60) {
