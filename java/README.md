@@ -34,7 +34,26 @@ target/site/jacoco/index.html
 
 This workshop uses the [ApprovalTests.Java](https://github.com/approvals/approvaltests.java) library (v9.5.0).
 
-### Writing an Approval Test
+### Writing a Simple Approval Test
+
+Use `Approvals.verify` to approve a single result:
+
+```java
+import org.approvaltests.Approvals;
+import org.junit.jupiter.api.Test;
+
+public class MyTest {
+    @Test
+    void testWithoutCombinations() {
+        String result = someMethod("input");
+        Approvals.verify(result);
+    }
+}
+```
+
+This is useful when you want to verify the output of a single call rather than sweeping through all input combinations.
+
+### Writing an Approval Test with Combinations
 
 Use `CombinationApprovals.verifyAllCombinations` to test all input combinations:
 
