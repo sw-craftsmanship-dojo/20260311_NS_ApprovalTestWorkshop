@@ -1,0 +1,13 @@
+# Java
+target/
+.idea/
+*.iml
+*.received.txt
+
+# TypeScript
+node_modules/
+dist/
+*.snap
+stryker-tmp/
+reports/
+coverage/
